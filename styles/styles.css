@@ -9,7 +9,7 @@
 
 body{
       height: 100vh; /* 100% de la altura de la ventana */
-      overflow: hidden; /* Evita el scroll */
+      
       
     
    
@@ -215,13 +215,7 @@ body{
 }
 
 
-.footer{
-      padding: 1% 1% 1% 1%;
-      background-color: #418d94;
-      height: 50px;
-      text-align: center;
 
-}
     
 
 
