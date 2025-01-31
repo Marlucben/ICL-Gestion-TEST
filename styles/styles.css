@@ -129,7 +129,9 @@ body{
 }
 .menu-izquierdo-user{
       font-size: 1rem;
-      font-weight:bold
+      font-weight:bold;
+      
+      
 }
 
 .menu-izquierdo-categoria{
@@ -199,7 +201,7 @@ body{
       padding: 1% 1% 1% 1%;
       background-color: rgb(255, 255, 255);
       width: 85%;
-
+      
       font-size: 1rem;
       
 }
