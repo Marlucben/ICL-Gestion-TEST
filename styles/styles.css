@@ -8,9 +8,10 @@
 }
 
 body{
-    min-width: 100%;
-    height: 100vh; /* 100% de la altura de la ventana */
-    overflow: hidden; 
+      height: 100vh; /* 100% de la altura de la ventana */
+      overflow: hidden; /* Evita el scroll */
+      
+    
    
 }
 
@@ -29,7 +30,7 @@ body{
       border-bottom :1px solid rgb(165, 157, 157);
       display: flex;
       flex-direction: row;
-      height: 100px;
+      height: 10vh;
       overflow: hidden;
       
      
@@ -43,7 +44,8 @@ body{
 }
 .header-titulo{
       padding-left: 20px;
-      font-size: 2.5rem;
+      width: 600px;
+      font-size: 2rem;
       font-weight: bold;
      
 }
@@ -51,9 +53,52 @@ body{
 .header-titulo-portal{
       display: flex;
       align-items: center;
-      justify-content: center;
+      justify-content: start;
 
 }
+.header-nav{
+      
+      padding-left: 25%;
+      font-size: 1rem;
+
+}
+.nav-link active:hover{
+      color: rgb(0, 0, 0);
+}
+
+.header-nav{
+
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+      text-align: center;
+      
+}
+.menu-nav-link-a{
+      display: flex;
+      flex-direction: column;
+      color: rgb(99, 96, 96);
+      justify-content: center;
+      text-decoration: none;
+      font-size: 1rem;
+      height: 20px;
+      text-align:justify;
+      
+      transition-duration: 0.3s;
+      
+      
+}
+.menu-nav-link-a:hover{
+      
+      background-color: #418d94;
+      box-sizing:  border-box;
+      border-radius: 5px;
+      color:rgb(255, 255, 255);
+      box-sizing: border-box;
+      
+
+}
+
 
 
 .menu-izquierdo{
@@ -62,38 +107,38 @@ body{
       width:15%;
       display: flex;
       flex-direction: column;
-      gap: 10px;
+      gap: 5px;
       border-right: 1px solid rgb(165, 157, 157);
       
 }
 .menu-izquierdo-buscar{
       border-radius: 5px;
-      font-size: 1.5rem;
+      font-size: 1rem;
       color: rgb(255, 255, 255);
       font-weight: bold;
-      background-color: #155eef;
+      background-color: #418d94;
 
 }
 .menu-izquierdo-input{
       border-radius: 5px;
-      font-size: 1.5rem;
+      font-size: 1rem;
       text-align: center;
 
 }
 .menu-izquierdo-user{
-      font-size: 1.5rem;
+      font-size: 1rem;
       font-weight:bold
 }
 
 .menu-izquierdo-categoria{
-      font-size: 1rem;
+      font-size: 0.8rem;
       color: rgb(129, 127, 127);
 }
 .menu-izq-link-panel{
       
       height: 50px;
       padding-top: 10%;
-      font-size: 1.5rem;
+      font-size: 1rem;
       font-weight:bold
 }
 
@@ -107,7 +152,7 @@ body{
 
       display: flex;
       flex-direction: column;
-      gap: 25px;
+      gap: 14px;
       text-align: start;
       
 }
@@ -117,8 +162,8 @@ body{
       color: rgb(99, 96, 96);
       justify-content: center;
       text-decoration: none;
-      font-size: 1.5rem;
-      height: 50px;
+      font-size: 1rem;
+      height: 20px;
       text-align: start;
       padding-left: 30px;
       transition-duration: 0.3s;
@@ -127,16 +172,17 @@ body{
 }
 .menu-izq-link-a:hover{
       
-      background-color: #e7e3e3;
-      box-sizing: border-box;
+      background-color: #418d94;
+      box-sizing:  border-box;
       border-radius: 5px;
+      color: rgb(255, 255, 255);
       
 }
 .menu-izq-link-totales{
       text-decoration: none;
       color: black;
-      font-size: 1.5rem;
-      height: 45px;
+      font-size: 1rem;
+      height: 30px;
       text-align: start;
       padding-left: 30px;
 
@@ -150,6 +196,22 @@ body{
 
       font-size: 1rem;
       
+}
+.tablas-paginas{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-height: 100%; /* Hace que el div ocupe toda la altura */
+      padding: 20px;
+}
+.tabla-letra{
+      font-size: 75%;
+}
+
+
+.pagination{
+      
+      justify-content: flex-end;
 }
 
 
