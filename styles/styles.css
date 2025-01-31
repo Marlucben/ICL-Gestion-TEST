@@ -133,6 +133,10 @@ body{
 }
 
 .menu-izquierdo-categoria{
+      display: flex;
+      flex-direction: column;
+      align-content: flex-start;
+      
       font-size: 0.8rem;
       color: rgb(129, 127, 127);
 }
