@@ -7,20 +7,35 @@
 }
 
 body{
-    weight:100%;
-    hight:100%;
+    width:100%;
+    height: 100%;
+   
 }
+
+.contenedor-menu-principal{
+      display: flex;
+      flex-direction: row;
+
+}
+
+
 .header{
       padding: 2% 0% 0% 15%;
-      background-color: rgb(199, 207, 171);
+      background-color: rgb(169, 175, 149);
       font-size: 30px;
       color: black;
+     
+     
+      
       
 }
 
 .menu-izquierdo{
-      padding: 2% 0% 55% 0%;
+      padding: 1% 1% 54% 1%;
       background-color: rgb(199, 100, 171);
+      width:15%;
+      display: flex;
+      flex-direction: column;
       
       
       
@@ -28,11 +43,28 @@ body{
 
 
 .principal{
-      padding: 2% 45% 0% 0%;
+      padding: 1% 1% 1% 1%;
       background-color: rgb(100, 100, 171);
+      width: 80%;
+
+      font-size: 1rem;
+      font-family: 'Montserrat', sans-serif;
       
       
-      
+}
+.menu-derecho{
+      width: 5%;
+      padding: 1% 1% 1% 1%;
+      background-color: rgb(173, 199, 100);
+
+}
+
+.footer{
+      padding: 1% 1% 1% 1%;
+      background-color: rgb(100, 199, 141);
+      height: 50px;
+      text-align: center;
+
 }
     
 
