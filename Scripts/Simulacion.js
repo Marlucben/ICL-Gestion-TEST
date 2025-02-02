@@ -158,9 +158,17 @@ function asignarNumeroAleatorio(){
     console.log(simulacion);
      incidentes = [
         sla ,
+        internos[simulacion],
+        origen[simulacion],
+        externos[simulacion],
+        fechas[simulacion],
+        horas[simulacion],
+        local[simulacion],
+        servicio[simulacion],
         direcciones[simulacion],
         localidades[simulacion],
         provincias[simulacion],
+        estado[simulacion],
         causas[simulacion],
         tecnicos[simulacion],
 
@@ -172,10 +180,10 @@ function asignarNumeroAleatorio(){
 
 
 function simularPagina(){
-    alert("probando boton , numero aleatorio es:"+generarNumeroAleatorio())
+    alert("probando boton,ver console.log")
     asignarNumeroAleatorio();
     console.log(incidentes);
-    alert(incidentes);
+    
     
     
 
