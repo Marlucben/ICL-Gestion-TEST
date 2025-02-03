@@ -140,9 +140,8 @@ function asignarTextoElemento(elemento, texto) {
         for (let i = 0; i < 20; i++) {
             let tr = document.createElement("tr");
             tr.innerHTML = `<tr>
-            
-            <td scope="row">${sla}</td>
-            <td>${internos[simulacion]}</td>
+            <td  scope="row" >${internos[simulacion]}</td>
+            <td>${sla}</td>
             <td>${origen[simulacion]}</td>
             <td>${externos[simulacion]}</td>
             <td>${fechas[simulacion]}</td>
