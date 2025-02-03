@@ -133,6 +133,22 @@ function asignarTextoElemento(elemento, texto) {
     li.textContent = texto;  
     elementoHTML.appendChild(li);  
 }
+<tr class="tabla-letra">
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>1000000</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+              </tr>
 
 function generarNumeroAleatorio() {
     let numeroGenerado =  Math.floor(Math.random()*indice);
@@ -178,13 +194,19 @@ function asignarNumeroAleatorio(){
 
 }
 
+function asignarTextoElemento(elemento, texto) { 
+    let elementoHTML = document.querySelector(elemento);
+    let td = document.createElement('td');  
+    td.textContent = texto;  
+    elementoHTML.appendChild(td);  
+}
+
+
+
 
 function simularPagina(){
     alert("probando boton,ver console.log")
     asignarNumeroAleatorio();
     console.log(incidentes);
-    
-    
-    
-
+    asignarTextoElemento('servicios', servicio[0])
 }
