@@ -155,8 +155,6 @@ function asignarTextoElemento(elemento, texto) {
             <td>${causas[simulacion]}</td>
             <td>${tecnicos[simulacion]}</td>
             </tr>
-            
-            
             `;
             tbody.appendChild(tr);
             simulacion = generarNumeroAleatorio();
