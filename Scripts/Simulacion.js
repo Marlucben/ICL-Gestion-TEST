@@ -165,7 +165,7 @@ function asignarTextoElemento(elemento, texto) {
     }
 
     
-    alert("Oprimir simular pagina para que aparesca un listado dinamico aleatorio de datos, a continuacion podra trabajar con ellos como crear,asignar,cancelar,solucionar") ;  
+    alert("Oprimir simular pagina para que aparesca un listado dinamico aleatorio de datos") ;  
 
 
 function simularPagina(){
