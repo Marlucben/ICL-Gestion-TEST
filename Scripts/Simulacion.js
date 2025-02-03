@@ -86,8 +86,9 @@ let direcciones = [
     "POS", "Microinformática", "Totem Tarjeta", "Flejeadora", "Huelleros"
   ];
 
-  let sla = 0
-  let simulacion = 0
+  let slas =[ "Sla 1" , "Sla 1.5" , "Sla 2"];
+  let slaRandon = 0;
+  let simulacion = 0;
 
 
 function generarNumeroAleatorio() {
@@ -97,14 +98,14 @@ function generarNumeroAleatorio() {
 
 function asignarNumeroAleatorio(){
     simulacion = generarNumeroAleatorio();
-     sla =  Math.floor(Math.random()*3)
+     slaRandon =  Math.floor(Math.random()*3);
     
 
 
 
     console.log(simulacion);
      incidentes = [
-        sla ,
+        slas[slaRandon] ,
         internos[simulacion],
         origen[simulacion],
         externos[simulacion],
@@ -141,7 +142,7 @@ function asignarTextoElemento(elemento, texto) {
             let tr = document.createElement("tr");
             tr.innerHTML = `<tr>
             <td  scope="row" >${internos[simulacion]}</td>
-            <td>${sla}</td>
+            <td>${slas[slaRandon]}</td>
             <td>${origen[simulacion]}</td>
             <td>${externos[simulacion]}</td>
             <td>${fechas[simulacion]}</td>
@@ -158,7 +159,7 @@ function asignarTextoElemento(elemento, texto) {
             `;
             tbody.appendChild(tr);
             simulacion = generarNumeroAleatorio();
-            sla =  Math.floor(Math.random()*3)
+            slaRandon =  Math.floor(Math.random()*3);
         }
     }
 
@@ -167,9 +168,9 @@ function asignarTextoElemento(elemento, texto) {
 
 
 function simularPagina(){
-    
+ 
     asignarNumeroAleatorio();
     console.log(incidentes);
-    
     generarLista();
+    
 }
