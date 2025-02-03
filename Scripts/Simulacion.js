@@ -199,7 +199,7 @@ function asignarTextoElemento(elemento, texto) {
     let td = document.createElement('td');  
     td.textContent = texto;  
     elementoHTML.appendChild(td);  
-
+}
          
     // Generar filas dinámicamente
     function generarLista() {
