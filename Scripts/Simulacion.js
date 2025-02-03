@@ -91,7 +91,7 @@ let direcciones = [
 
 
 function generarNumeroAleatorio() {
-    let numeroGenerado =  Math.floor(Math.random()*20)-1;
+    let numeroGenerado =  Math.floor(Math.random()*20);
     return numeroGenerado;
 }
 
@@ -164,11 +164,11 @@ function asignarTextoElemento(elemento, texto) {
     }
 
     
-    
+    alert("Oprimir simular pagina para que aparesca un listado dinamico aleatorio de datos, a continuacion podra trabajar con ellos como crear,asignar,cancelar,solucionar") ;  
 
 
 function simularPagina(){
-    alert("probando boton,ver console.log")
+    
     asignarNumeroAleatorio();
     console.log(incidentes);
     
