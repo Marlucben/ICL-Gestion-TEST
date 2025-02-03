@@ -160,6 +160,7 @@ function asignarTextoElemento(elemento, texto) {
             `;
             tbody.appendChild(tr);
             simulacion = generarNumeroAleatorio();
+            sla =  Math.floor(Math.random()*3)
         }
     }
 
