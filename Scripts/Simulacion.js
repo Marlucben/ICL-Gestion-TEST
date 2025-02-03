@@ -199,14 +199,38 @@ function asignarTextoElemento(elemento, texto) {
     let td = document.createElement('td');  
     td.textContent = texto;  
     elementoHTML.appendChild(td);  
-}
 
+         
+    // Generar filas dinámicamente
+    function generarLista() {
+        let tbody = document.getElementById("sla-list");
+        tbody.innerHTML = ""; // Limpiar lista antes de generar nueva
 
+        for (let i = 0; i < 20; i++) {
+            let tr = document.createElement("tr");
+            tr.innerHTML = `<td>sla</td>`;
+            tbody.appendChild(tr);
+        }
+    }
+
+    // Actualizar los valores dinámicamente
+    function actualizarSLAs() {
+        for (let i = 0; i < 20; i++) {
+            let td = document.getElementById(`sla-${i}`);
+            if (td) {
+                td.innerText = `Nuevo valor ${i + 1}`;
+            }
+        }
+    }
+
+    // Llamar a la función al cargar la página
+    generarLista();
 
 
 function simularPagina(){
     alert("probando boton,ver console.log")
     asignarNumeroAleatorio();
     console.log(incidentes);
-    asignarTextoElemento('servicios', servicio[0])
+    
+    generarLista();
 }
