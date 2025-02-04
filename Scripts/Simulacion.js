@@ -89,11 +89,14 @@ let direcciones = [
   let slas =[ "Sla 1" , "Sla 1.5" , "Sla 2"];
   let slaRandon = 0;
   let simulacion = 0;
-
+  let repetibles = [];
+  let cantidadAleatoria = 0;
 
 function generarNumeroAleatorio() {
     let numeroGenerado =  Math.floor(Math.random()*20);
+
     return numeroGenerado;
+  
 }
 
 function asignarNumeroAleatorio(){
@@ -137,8 +140,8 @@ function asignarTextoElemento(elemento, texto) {
     function generarLista() {
         let tbody = document.getElementById("sla-list");
         tbody.innerHTML = ""; // Limpiar lista antes de generar nueva
-
-        for (let i = 0; i < 20; i++) {
+        cantidadAleatoria = generarNumeroAleatorio();
+        for (let i = 0; i < cantidadAleatoria; i++) {
             let tr = document.createElement("tr");
             tr.innerHTML = `<tr>
             <td  scope="row" >${internos[simulacion]}</td>
@@ -158,6 +161,7 @@ function asignarTextoElemento(elemento, texto) {
             </tr>
             `;
             tbody.appendChild(tr);
+            repetibles.push = [simulacion];
             simulacion = generarNumeroAleatorio();
             slaRandon =  Math.floor(Math.random()*3);
         }
